@@ -5,11 +5,12 @@
     <title>Conebyte Registration</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <form action="submit.php" method="post">
+        <form action="submit.php" method="post" onsubmit="return validateNationality()">
             <a href="https://conebyte.com/">
                 <img style="display: block; margin: auto;" src="conebyte_logo.png" alt="Conebyte Logo">
             </a>
