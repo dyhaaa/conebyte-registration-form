@@ -72,18 +72,23 @@ input {
   border-radius: 10px;
 }
 
-.confirmbutton:hover {
-  opacity: 1;
+.confirmbutton:hover .front {
+  transform: translateY(-8px);
+  filter: brightness(110%);
 }
 
+
 .front {
+  transform: translateY(-5px);
   display: block;
-  padding: 12px 42px;
+  padding: 10px 40px;
   border-radius: 12px;
-  font-size: 1.25rem;
+  font-size: 20px;
   background: rgb(115, 59, 194);
   color: white;
-  transform: translateY(-6px);
+
+  will-change: transform;
+  transition: transform 150ms, filter 150ms;
 }
 
 .confirmbutton:active .front {
