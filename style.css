@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 20px;
   background-color: #5e98ab;
   background-image: linear-gradient(to bottom, #97d2e6 , #fddeff);
@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-  font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 /* Container */
@@ -43,25 +43,90 @@ input {
   outline: none
 }
 
-input[type="date"] {
-  width: 30%;
+input.name {
+  
 }
 
 .date-input {
-  width: 50%;
-  padding: 15px;
+  font-family: "Poppins", Arial, sans-serif;
+  color: rgb(0, 90, 120);
+  padding: 10px;
   border: none;
   border-radius: 10px;
-  border-width: 1px;
-  background-color: rgb(228, 238, 243);
+  background-color: rgb(220, 243, 251);
 }
 
 .datepicker-container {
   position: relative;
-  font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif; 
+  font-family: "Poppins", Arial, sans-serif;
 }
 
-.dates {
+.datepicker-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.month-input {
+  font-family: "Poppins", Arial, sans-serif;
+  color: rgb(0, 90, 120);
+  max-width: 120px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(220, 243, 251);
+}
+
+.year-input {
+  font-family: "Poppins", Arial, sans-serif;
+  color: rgb(0, 90, 120);
+  max-width: 64px;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(220, 243, 251);
+}
+
+.datepicker-header button {
+  background-color: white;
+  color: rgb(3, 176, 234);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.datepicker-header button:hover {
+  background-color: rgb(3, 176, 234);
+  color: white;
+}
+
+.datepicker-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.datepicker-footer button {
+  font-family: "Poppins", Arial, sans-serif;
+  border-radius: 10px;
+  border: none;
+  padding: 3px 10px;
+  opacity: 80%;
+}
+
+.datepicker-footer button:hover {
+  opacity: 100%;
+}
+
+.datepicker-footer button.select{
+  color: white;
+  background-color: rgb(3, 176, 234);
+}
+
+.days, .dates {
   display: grid;
   grid-template-columns: repeat(7, 40px);
   gap: 10px;
@@ -100,7 +165,7 @@ input[type="date"] {
 
 /* Confirm button */
 .confirmbutton {
-  font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   background-color: #04ab6e;
   color: white;
   padding: 16px 20px;
@@ -117,7 +182,7 @@ input[type="date"] {
 }
 
 a {
-  font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   color: black
 }
 

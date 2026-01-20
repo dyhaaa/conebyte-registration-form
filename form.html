@@ -5,6 +5,7 @@
     <title>Conebyte Registration</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet">
+    <script type="module" src="datepicker_script.js"></script>
 </head>
 
 <body>
@@ -17,20 +18,18 @@
             <i class="ri-user-fill"></i>
             <label for="name"><b>Name</b></label>
             <br>
-            <input type="text" pattern="[A-Za-z ]*" placeholder="Enter name (text only)" name="name" id="name" required>
+            <input type="text" pattern="[A-Za-z ]*" class="name" placeholder="Enter name (text only)" name="name" id="name" required>
             <br><br>
 
             <i class="ri-phone-fill"></i>
             <label for="phone"><b>Phone Number</b></label>
             <br>
             <input type="number" pattern="[0-9]" placeholder="Enter phone number (eg: 0123456789)" name="phone" id="phone" required>
-            <br><br>
 
             <i class="ri-id-card-fill"></i>
             <label for="sid"><b>Student ID</b></label>
             <br>
             <input type="number" pattern="[0-9]" placeholder="Enter student ID (eg: 12345678)" name="sid" id="sid" required>
-            <br><br>
 
             <i class="ri-mail-fill"></i>
             <label for="email"><b>Email</b></label>
@@ -44,19 +43,13 @@
             <input type="text" pattern="[A-Za-z ]*" placeholder="Enter job task (text only)" name="task" id="task" required>
             <br><br>
 
-            <i class="ri-calendar-event-fill"></i>
-            <label for="dob"><b>Date of Birth</b></label>
-            <br>
-            <input type="date" name="dob" id="dob" required class="custom-date-input">
-            <br><br>
-
             <div class="datepicker-container">
                 <input type="text" class="date-input" placeholder="Select Date of Birth">
                 
                 <div class="datepicker">
 
                     <div class="datepicker-header">
-                        <button class="prev"><</button>
+                        <button type="button"><</button>
                         <div>
                             <select class="month-input">
                             <option>January</option>
@@ -74,30 +67,31 @@
                             </select>
                             <input type="number" class="year-input" min="1900" max="2100">
                         </div>
-                        <button class="next">></button>
+                        <button type="button">></button>
                     </div>
 
                     <div class="days">
+                        <span>Sun</span>
                         <span>Mon</span>
                         <span>Tue</span>
                         <span>Wed</span>
                         <span>Thu</span>
                         <span>Fri</span>
                         <span>Sat</span>
-                        <span>Sun</span>
                     </div>
 
                     <div class="dates">
-                        <button disabled>1</button><button class="selected">2</button><button class="today">3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button><button>10</button><button>11</button><button>12</button><button>13</button><button>14</button><button>15</button><button>16</button><button>17</button><button>18</button><button>19</button><button>20</button><button>21</button><button>22</button><button>23</button><button>24</button><button>25</button><button>26</button><button>27</button><button>28</button><button>29</button><button>30</button>
+                        <button type="button" disabled>1</button><button type="button" class="selected">2</button><button type="button" class="today">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button><button type="button">11</button><button type="button">12</button><button type="button">13</button><button type="button">14</button><button type="button">15</button><button type="button">16</button><button type="button">17</button><button type="button">18</button><button type="button">19</button><button type="button">20</button><button type="button">21</button><button type="button">22</button><button type="button">23</button><button type="button">24</button><button type="button">25</button><button type="button">26</button><button type="button">27</button><button type="button">28</button><button type="button">29</button><button type="button">30</button>
                     </div>
 
                     <div class="datepicker-footer">
-                        <button class="cancel">
+                        <button type="button" class="cancel">CANCEL</button>
+                        <button type="button" class="select">SELECT</button>
                     </div>
 
                 </div>
             </div>
-
+            <br><br>
             
             <i class="ri-earth-fill"></i>
             <label for="nationality"><b>Nationality</b></label>
